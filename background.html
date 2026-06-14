@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+             font-family: "Poppins", sans-serif;
+
+        }
+        .container{
+            /* background-image: url(https://i.ytimg.com/vi/sDRpzyd28rk/maxresdefault.jpg); */
+            /* background-image: url(./bg.jpg); */
+            background-image: url(https://cdn.pixabay.com/photo/2023/10/12/17/56/after-the-rain-8311416_1280.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           height: 100vh;
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+
+        .card{
+    width: 400px;
+    margin:0 auto;
+    
+    border: 1px solid white;
+    padding: 16px;
+    text-align: center;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
+ 
+    /* color: blue; */
+}
+
+input{
+    background: transparent;
+    outline: none;
+   
+    /* border-bottom: 1px solid white; */
+    /* border: 1px solid white; */
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+  
+}
+.abc input{
+      width: 100%;
+}
+
+
+input:focus{
+   border: 1px solid blue;
+}
+
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.726);
+  
+}
+
+.abc button:hover{
+    background-color: black;
+    color: white;
+}
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+       <div class="card">
+        <h1>Login</h1>
+       <div class="abc">
+         <input type="text" placeholder="enter your email">
+       </div>
+      
+
+       <div class="abc">
+         <input type="password" placeholder="enter your password">
+       </div>
+       <div>
+         <input type="checkbox">
+         Remember Me
+       </div>
+       <div class="abc">
+         <button>Submit</button>
+       </div>
+        <p>Don't have an account? Register</p>
+       </div>
+    </div>
+    
+    
+</body>
+</html>

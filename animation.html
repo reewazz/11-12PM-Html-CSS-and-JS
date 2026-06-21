@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+
+    <style>
+        body{
+             background-color: cadetblue;
+        }
+        .container{
+            margin: 50px auto;
+            height: 300px;
+            width: 300px;
+           border: 2px solid white;
+              animation-name: circle;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          /* animation-iteration-count: infinite; */
+          border-radius: 50%;
+          /* transition: all 2s ease-in-out; */
+        }
+
+        .box{
+              height: 100px;
+            width: 100px;
+          background-color: white;
+          border-radius: 50%;
+          /* animation-name: apple;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite; */
+          /* animation-fill-mode: forwards; */
+          
+          /* animation-delay: 2s; */
+          /* animation-iteration-count: infinite; */
+          /* animation-direction: alternate-reverse; */
+          /* animation-timing-function: cubic-bezier(0.27, -0.35, 1, -0.55) */
+        }
+
+        @keyframes apple {
+            0%{
+                    transform: translate(0,0);
+            }
+            25%{
+                transform: translate(200px,0);
+                /* background-color: black;
+                border-radius: 20%; */
+            }
+            50%{
+                transform: translate(200px,200px);
+                /* background-color: purple;
+                border-radius: 50%; */
+
+            }
+            75%{
+                transform: translate(0,200px);
+                /* background-color: brown;
+                border-radius: 20%; */
+            }
+            100%{
+                transform: translate(0,0);
+            }
+          
+        }
+
+        @keyframes circle {
+            from{
+                transform: rotate(0deg);
+
+            }
+            to{
+                transform: rotate(360deg);
+               
+            }
+            
+        }
+
+       
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="box">
+    
+    </div>
+</div>
+    
+</body>
+</html>

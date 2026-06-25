@@ -31,6 +31,19 @@ nav{
   width: 450px;
   position: relative;
 }
+
+.cards{
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+ }
+
+
+
+
+
 .imgarea img{
     height: 100%;
     width: 100%;
@@ -100,10 +113,69 @@ transition: all 2s ease-in-out;
     padding: 20px 80px;
  }
 
- .cards{
-    display: grid;
-    /* justify-content: space-between; */
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
+ 
+
+
+ /* @media (min-width :425px) {
+    body{
+        background-color: black;
+        color: white;
+    }
  }
+
+ @media (min-width: 425px ) and (max-width:768px) {
+      body{
+        background-color: blue; 
+         color: white; 
+    }
+ }
+
+ @media (width>768px) {
+    body{
+        background-color: green;
+    }
+ } */
+
+ .menu{
+    display: none;
+ }
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .cards{
+    grid-template-columns: 1fr 1fr;
+}
+}
+ @media (max-width:768px) {
+.hero .textarea {
+    width: 100%;
+}
+
+.hero{
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 40px;
+}
+.hero .imgarea{
+    width: 350px;
+}
+.cards{
+    grid-template-columns: 1fr;
+}
+
+.featured{
+    padding: 24px 40px;
+}
+
+nav{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+}
+
+
+

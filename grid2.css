@@ -52,3 +52,29 @@ grid-column: span 2 ;
     width: 40%;
 }
 
+@media screen and (max-width:768px){
+    .main{
+        flex-direction: column;
+        gap: 40px;
+        padding: 24px 40px;
+        text-align: justify;
+        
+    }
+
+    .main .textarea {
+        width: 100%;
+        
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .col-span{
+        grid-column: span 1;
+    }
+    .row-span {
+        grid-row: span 1;
+    }
+    
+}
+

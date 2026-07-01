@@ -14,6 +14,8 @@
 // console.log(logoh1)
 
 const navid = document.getElementById('navid')
+
+
 navid.style.backgroundColor = 'black'
 navid.style.color = 'white'
 // navid.style.color = 'red'
